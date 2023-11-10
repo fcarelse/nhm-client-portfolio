@@ -1,0 +1,41 @@
+body{
+	padding-bottom: 200px;
+	background-color: #ffffff;
+}
+
+.content{
+	background-color: #eeffff;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+	/* box-shadow: 10px 5px 5px grey; */
+	border-radius: 10px;
+	min-height: 100vh;
+}
+
+h1,h2,h3,h4,h5,p{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+navbar.navbar{
+	background-color: rgb(255, 255, 255) !important;
+	/* box-shadow: 10px 5px 5px rgb(124, 124, 124); */
+}
+
+footer{
+	padding: 15px;
+	box-shadow: 10px 5px 5px rgb(124, 124, 124);
+}
+
+.waves-section{
+	background-color: #ffffff;
+}
+img.wave-start{
+	background-color: #eeffff;
+	width: 100%;
+}
+img.wave-end{
+	background-color: #ffffff;
+	width: 100%;
+}

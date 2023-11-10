@@ -6,21 +6,22 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title></title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="/css/global.css">
 	<link rel="stylesheet" href="/css/widescreen.css" media="screen and (min-width: 768px)">
 	<link rel="stylesheet" href="/css/smallscreen.css" media="screen and (max-width: 768px)">	
 	<link rel="stylesheet" href="/css/home.css">
 	<script src="https://nhm.ie/client/min.js"></script>
-	<script defer src="https://livehelp.im/popin/lhim-popin-experimental.js"></script>
 	<base href="/home/">
 </head>
 <body ng-controller="Main">
 	<div ng-include="'/layout/navbar.html'"></div>
-	<div ng-if="sys.page.url">
-		<div ng-include="sys.page.url"></div>
-	</div>
-	<div ng-if="!sys.page.url" ng-bind-html="$sce.trustAsHtml(sys.page.content)">
+	<div class="content">
+		<div ng-if="sys.page.url">
+			<div ng-include="sys.page.url"></div>
+		</div>
+		<div ng-if="!sys.page.url" ng-bind-html="$sce.trustAsHtml(sys.page.content)">
+		</div>
 	</div>
 	<div ng-include="'/layout/notifications.html'"></div>
 	<div ng-include="'/layout/footer.html'"></div>
@@ -41,5 +42,6 @@
 	<script src="/home/js/main.js"></script>
 	<script src="/js/util.js"></script>
 	<script src="/js/notify.js"></script>
+	<script src="/js/element/svg-wave.js" defer></script>
 </body>
 </html>
